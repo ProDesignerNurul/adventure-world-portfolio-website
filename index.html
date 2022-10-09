@@ -27,6 +27,7 @@
             <li><a href="#">About</a></li>
             <li class="ctn"><a href="#" >Contact</a></li>
         </ul>
+        <img src="./images/menu-btn/menu-icon.png" class="menu-btn" alt="">
     </nav>
 
     <!-- header section design start  -->
@@ -48,6 +49,16 @@
     <footer>
 
     </footer>
+
+
+    <!-- JS Files  -->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 
 </body>
 
