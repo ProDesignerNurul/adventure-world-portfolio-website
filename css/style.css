@@ -1,7 +1,115 @@
+/* google font added  */
+body {
+    font-family: 'Acme', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar design  */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.navbar a{
+    color: white;
+}
+.active a{
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+
 /* header section design  */
+a {
+    text-decoration: none;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('../images/hero-img/hero-img.jpg');
+    background-position:  bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 8px 15px;
+    background-color: #fc036b;
+    border-radius: 5px;
+    color: white;
+}
 
 
 /* main section design  */
 
 
 /* footer section design  */
+
+
+
+/* Responsive Design  */ 
+
+/* Mobile Device  */
+@media screen and (max-width: 850px) {
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: darkolivegreen;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    
+}
